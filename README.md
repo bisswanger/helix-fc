@@ -1,9 +1,10 @@
-# Your Project's Title...
-Your project's description...
+# Franklin sample project
+
+Test conversion of https://fc.de/fc-info/startseite/
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--helix-fc--bisswanger.hlx.page/
+- Live: https://main--helix-fc--bisswanger.hlx.live/
 
 ## Installation
 
@@ -23,4 +24,4 @@ npm tst
 1. Add the [helix-bot](https://github.com/apps/helix-bot) to the repository
 1. Install the [Helix CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/helix-cli`
 1. Start Franklin Proxy: `hlx up` (opens your browser at `http://localhost:3000`)
-1. Open the `{repo}` directory in your favorite IDE and start coding :)
+1. Open the `helix-fc` directory in your favorite IDE and start coding :)
