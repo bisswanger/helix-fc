@@ -1,4 +1,4 @@
 
 export default function decorate(block) {
-    console.log("TEST 123")
+    console.log("TEST 789")
 }

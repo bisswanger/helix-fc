@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 16px;
 }
 
@@ -12,9 +12,37 @@
     background-color: var(--background-color)
 }
 
+.cards > ul > li:hover {
+    background: #ebebeb;
+}
+
 .cards .cards-card-body {
     margin: 16px;
 }
+
+.cards a, .cards a:hover {
+    color: #333;
+}
+
+.cards .cards-card-body h2 {
+    color: #cc0000 !important;
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 0.625em;
+    font-family: "TradeGothicLTPro-BdCn20", "trebuchet ms", arial, sans-serif;
+    font-weight: normal;
+}
+
+/*
+
+    @media screen and (max-width: 29.25em) {
+.small-teaser .mod-teaser-content h2, .small-teaser .mod-teaser-content h3, .small-teaser .mod-teaser-content .headline-3,
+.small-teaser .mod-teaser-content h4,
+.small-teaser .mod-teaser-content h5 {
+    font-size: 16px;
+    font-size: 1rem; } }
+ */
+
 
 .cards .cards-card-image {
     line-height: 0;
@@ -23,6 +51,26 @@
 .cards .cards-card-body > *:first-child {
     margin-top: 0;
 }
+
+.cards .cards-card-body {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    color: #000;
+    margin-bottom: 0.3125em;
+    display: block;
+    font-family: "Roboto Slab", georgia, "serif";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+.cards .cards-card-body:last-child {
+
+    font-size: 15px;
+    font-size: 0.9375rem;
+    color: #cc0000;
+    text-decoration: underline;
+}
+
 
 .cards > ul > li img {
     width: 100%;

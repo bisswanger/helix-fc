@@ -104,7 +104,7 @@ export default async function decorate(block) {
     nav.id = 'nav';
     nav.innerHTML = html;
 
-    const classes = ['brand', 'sections', 'tools'];
+    const classes = ['brand', 'sections'/*, 'tools'*/];
     classes.forEach((c, i) => {
       const section = nav.children[i];
       if (section) section.classList.add(`nav-${c}`);
@@ -158,5 +158,11 @@ export default async function decorate(block) {
     navWrapper.className = 'nav-wrapper';
     navWrapper.append(nav);
     block.append(navWrapper);
+
+    // logo
+    const logo = document.createElement('div');
+    logo.classList.add('nav-logo');
+    logo.innerHTML = `<a href="fc-info/startseite/" id="logo">1.FC Köln</a>`;
+
   }
 }
