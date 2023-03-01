@@ -112,6 +112,7 @@ export default async function decorate(block) {
 
     const navSections = nav.querySelector('.nav-sections');
     if (navSections) {
+      // top-level menu
       navSections.querySelectorAll(':scope > ul > li').forEach((navSection) => {
         if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
         navSection.addEventListener('click', () => {
@@ -119,6 +120,21 @@ export default async function decorate(block) {
             const expanded = navSection.getAttribute('aria-expanded') === 'true';
             toggleAllNavSections(navSections);
             navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          }
+        });
+      });
+
+      // 1st + 2nd level navigation handling
+      navSections.querySelectorAll(':scope > ul > li > a, :scope > ul > li > ul > li > a').forEach((navLink) => {
+        navLink.addEventListener('click', (event) => {
+          if (isDesktop.matches) {
+            // Nothing happens on desktop mode
+            event.preventDefault();
+          } else {
+            // Expand/collapse on mobile mode
+            const expanded = navLink.getAttribute('aria-expanded') === 'true';
+            toggleAllNavSections(navSections);
+            navLink.setAttribute('aria-expanded', expanded ? 'false' : 'true');
           }
         });
       });
