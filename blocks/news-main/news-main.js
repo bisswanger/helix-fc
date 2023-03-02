@@ -1,4 +1,4 @@
 
-export default function decorate(block) {
-    console.log("TEST 789")
+export default async function decorate(block) {
+
 }

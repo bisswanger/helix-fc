@@ -1,40 +1,115 @@
-/* block specific CSS goes here */
 
-main .hero-container > div {
-    max-width: unset;
-}
-  
-main .hero-container {
+main .hero-main-container {
     padding: 0;
 }
-  
-main .hero {
-    position: relative;
-    padding: 32px;
-    min-height: 300px;
+
+main .hero-main-wrapper {
+    max-width: unset;
 }
 
-main .hero h1 {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
+.news-wrapper {
+    height: 720px;
+    overflow: hidden;
 }
 
-
-main .hero picture {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    object-fit: cover;
-    box-sizing: border-box;
-}
-
-main .hero img {
-    object-fit: cover;
+.news-wrapper img {
     width: 100%;
-    height: 100%;
+    object-fit: contain;
+}
+
+.news-wrapper .carousel-buttons {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+    /*text-align: center;
+    margin-top: -28px;
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    z-index: 2;*/
+}
+
+.news-wrapper .carousel-buttons button {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background: green; /*#fff;*/
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.news-wrapper .carousel-buttons button.selected {
+    background: #cc0000;
+}
+
+.news-wrapper h2,
+.news-wrapper h3,
+.news-wrapper .headline-3,
+.news-wrapper h4,
+.news-wrapper h5 {
+    color: #fff; 
+}
+
+.news-wrapper {
+    /*position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;*/
+}
+
+.news-info-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.news-info {
+    color: #fff;
+    text-align: left;
+
+    display: inline-block;
+    background: #990000;
+    background: rgba(153, 0, 0, 0.9);
+
+    padding: 25px;
+    float: left;
+    border-right: 3px solid #7e0000;
+
+    position: absolute;
+    bottom: 10px;
+}
+
+.news-info span {
+    font-family: "Roboto Slab", georgia, "serif";
+    font-size: 15px;
+    font-size: 0.9375rem;
+}
+
+.news-info h2 {
+    font-family: "TradeGothicLTPro-BdCn20", "trebuchet ms", arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.news-info h4 {
+    font-family: "TradeGothicLTPro-BdCn20", "trebuchet ms", arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: normal;
 }

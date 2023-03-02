@@ -438,6 +438,7 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  display: none;
 }
 
 header nav .nav-brand .icon-logo {
